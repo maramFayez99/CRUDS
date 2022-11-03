@@ -1,0 +1,77 @@
+body{
+    background-color: #222;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.form-control{
+    border: none;
+    outline: none;
+    background-color: #111;
+    margin: 4px 0;
+    color: #fff;
+    width: 100%;
+}
+.form-control:focus{
+    background-color: #000;
+   transform:scaleX(1.1);
+   color: #fff;
+}
+
+#total{
+    background-color: #0d6efd;
+     padding: 5px 2px;
+     border-radius: 4px;
+     cursor: pointer;
+}
+
+#total::before{
+    content: "Total : ";
+}
+
+button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 2px;
+    cursor: pointer;
+    background-color: #0d6efd;
+    color: #fff;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: #1f4c90;
+    letter-spacing: 1px;
+}
+
+.table{
+    background-color: #222;
+    color: #fff;
+
+}
+#deleteAll{
+    margin: 5px 0;
+  
+}
+
+#delete{
+    background-color: red;
+}
+
+#update{
+    background-color: green;
+}
+
+thead{
+    background-color: rgb(154, 150, 150);
+    color: #000;
+}
+
+.t1{
+    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y:hidden;
+}
+
+

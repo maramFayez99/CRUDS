@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cruds</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.29/sweetalert2.min.css" integrity="sha512-doewDSLNwoD1ZCdA1D1LXbbdNlI4uZv7vICMrzxfshHmzzyFNhajLEgH/uigrbOi8ETIftUGBkyLnbyDOU5rpA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container p-1">
+      <div class="crud text-center m-1">
+        <div class="head ">
+          <h2 class="text-uppercase">cruds</h2>
+          <p class="text-uppercase">product managment system</p>
+        </div>
+        <div class="input ">
+          <input type="text" class="form-control " id="tittle" placeholder="tittle">
+          <div class="price row justify-content-center ">
+            <div class="col-md-3 col-lg col-xs-12"><input onkeyup="getTotal()" type="number" class="form-control " id="price" placeholder="price"></div>
+            <div class="col-md-3 col-lg col-xs-12"> <input onkeyup="getTotal()" type="number" class="form-control " id="taxes" placeholder="taxes"></div>
+            <div class="col-md-3 col-lg col-xs-12"><input onkeyup="getTotal()" type="number" class="form-control " id="ads" placeholder="ads"></div>
+            <div class="col-md-3 col-lg col-xs-12"><input onkeyup="getTotal()" type="number" class="form-control " id="discount" placeholder="disc"></div>
+            <div class="col m-2 col-lg col-xs-12 ">
+              <small id="total">22222</small>
+            </div>
+            
+          </div>
+          <input type="count" class="form-control " id="count" placeholder="count">
+          <input type="text" class="form-control " id="category" placeholder="category">
+          <button id="submit">create</button>
+        </div>
+        <div class="output">
+          <div class="search">
+            <input onkeyup="searchData(this.value)"  type="text" class="form-control " id="search" placeholder="search">
+            <div class="btnsearch row">
+              <div class="col">
+                <button onclick="getSearchMood(this.id)"  id="searchtittle">search by tittle</button>
+              </div>
+             <div class="col">
+              <button onclick="getSearchMood(this.id)" id="searchcategory">search by category</button>
+             </div>
+              
+            </div>
+          </div>
+<div id="deleteAll" >
+
+</div>
+
+<div class="t1 ">
+  <table class="table  ">
+    <thead>
+      <tr class="text-capitalize">
+        <th scope="col">id</th>
+        <th scope="col">tittle</th>
+        <th scope="col">price</th>
+        <th scope="col">taxes</th>
+        <th scope="col">ads</th>
+        <th scope="col">discount</th>
+        <th scope="col">total</th>
+        <th scope="col">category</th>
+        <th scope="col ">update</th>
+        <th scope="col">delete</th>
+      </tr>
+    </thead>
+    <tbody id="data">
+   
+      
+    </tbody>
+  </table>
+</div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    
+    <!-- bootstrap 5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.29/sweetalert2.all.min.js" integrity="sha512-cgolxBUBvc5yorfBxXYQCvGEaTbZDdRMDjGrMw8h4G01gm/BfHlN8CO3amP68GbNbw8LY5uj/CFW4qpY9lHyPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.29/sweetalert2.min.js" integrity="sha512-gCB2+0sWe4La5U90EqaPP2t58EczKkQE9UoCpnkG2EDSOOihgX/6MiT3MC4jYVEX03pv6Ydk1xybLG/AtN+3KQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
